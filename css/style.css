@@ -1,0 +1,59 @@
+div#image-div {
+
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.form-area {
+    margin-left: 35%;
+    width: 30%;
+    margin-top: 0;
+    margin-right: 20px;
+    border:3px solid greenyellow;
+    padding: 2% 0;
+    padding-left: 0;
+    background-color: honeydew;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label{
+    margin-left: 20%;
+}
+
+input[type=number]:focus{
+    outline: none;
+    border:2px solid greenyellow;
+}
+
+button {
+    margin-left: 35%;
+    width: 35%;
+    height: 30px;
+    border:0;
+    background-color: orange;
+    border-radius: 5px;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+#form-area {
+    display:flex;
+}
+
+#result {
+    display:block;
+    margin-left:80px;
+}
