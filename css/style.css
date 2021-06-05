@@ -12,28 +12,43 @@ img {
 .form-area {
     margin-left: 35%;
     width: 30%;
+    height: 70%;
     margin-top: 0;
     margin-right: 20px;
-    border:3px solid greenyellow;
+   
     padding: 2% 0;
     padding-left: 0;
     background-color: honeydew;
     font-size: large;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border-radius: 5px ;
+    
+    animation: mymove 10s infinite;
 }
 
-label{
-    margin-left: 20%;
+@keyframes mymove {
+    from {background-color:rgb(218, 218, 218);}
+    to {background-color: greenyellow;}
+  }
+
+  .form-area:hover{
+    box-shadow:10px 10px 15px grey;
+  }
+
+
+input[type=number] {
+    width: 5em;
 }
 
 input[type=number]:focus{
     outline: none;
-    border:2px solid greenyellow;
+    border:3px solid orangered;
 }
 
 button {
-    margin-left: 35%;
+    margin-top: 5%;
     width: 35%;
     height: 30px;
     border:0;
@@ -47,13 +62,14 @@ button {
 button:hover {
     background-color: orangered;
     cursor: pointer;
+    color: greenyellow;
+    box-shadow: 5px 5px 10px  #aaaaaa;
 }
 
 #form-area {
     display:flex;
 }
-
+/*  
 #result {
-    display:block;
-    margin-left:80px;
-}
+   
+}  */
