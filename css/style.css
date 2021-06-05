@@ -47,29 +47,66 @@ input[type=number]:focus{
     border:3px solid orangered;
 }
 
-button {
+button, button[name=small-button] {
     margin-top: 5%;
     width: 35%;
-    height: 30px;
     border:0;
     background-color: orange;
     border-radius: 5px;
     color: green;
-    font-size: large;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-button:hover {
+button:hover, button[name=small-button]:hover {
     background-color: orangered;
     cursor: pointer;
     color: greenyellow;
     box-shadow: 5px 5px 10px  #aaaaaa;
 }
 
+button[name=small-button] {
+    display:none;
+    font-size: 0.5rem;
+}
+
 #form-area {
     display:flex;
 }
-/*  
-#result {
-   
-}  */
+
+@media (max-width: 820px ) {
+
+    button {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 606px ) {
+    input[type=number] {
+        display: block;
+        margin: auto;
+    }
+
+    button {
+     display: none;  
+    }
+
+     button[name=small-button] {
+      
+        display: block;
+        margin: auto;
+    }
+
+
+}
+
+@media (max-width: 335px ) {
+    input[type=number] {
+        width:30%
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+}
